@@ -2,19 +2,15 @@
 **Open-source AI tools for proactive competition enforcement and regulatory modernization**
 
 Built by [AI for Canadians](https://aiforcanadians.org) in collaboration with the Competition Bureau of Canada.  
-September 2026 · MIT License · All data public · No confidential sources.
+September 2026 · MIT License · All data public · No confidential sources · Zero AI API costs to run.
 
 ---
 
 ## What this is
 
-Two Python tools that surface competition-relevant intelligence from fully public Canadian government data — designed to help enforcement teams move from reactive (complaint-driven) to proactive (pattern-detected) investigation.
+Three Python tools that surface competition-relevant intelligence from fully public Canadian government data. Designed to help enforcement teams, regulators, researchers, and private litigants move from reactive (complaint-driven) to proactive (pattern-detected) investigation.
 
-Built for:
-- The Competition Bureau's Digital Enforcement and Intelligence Branch
-- Provincial regulators and policy advocates
-- Academic researchers studying competition in Canada
-- Citizens and organizations using the new private access rights (Bill C-59, June 2025)
+**Proof of concept:** The procurement screen independently identified Dalian Enterprises at CBSA as the highest amendment inflation flag in 19,870 contracts — a 2-person company with a $404K original award that grew to $31.2M. When we looked it up: already under RCMP investigation and federal suspension from the ArriveCan fallout. The tool found it from math on public data, before we knew what the company was.
 
 ---
 
@@ -22,57 +18,98 @@ Built for:
 
 ### `procurement_screen.py` — Federal Procurement Bid-Rigging Screen
 
-Pulls 1.3M+ federal contract records from open.canada.ca and applies five statistical screens for bid-rigging patterns.
+Pulls 1.3M+ federal contract records from open.canada.ca and applies five statistical screens.
 
 | Signal | What it detects |
 |--------|-----------------|
-| Vendor concentration | One vendor capturing 60%+ of a dept+commodity spend |
-| High-value sole-source | Contracts >$100K awarded without competition |
+| Vendor concentration | One vendor >60% of dept+commodity spend |
+| High-value sole-source | Contracts >$100K without competition |
 | Amendment inflation | Contracts growing >50% from original award |
-| Rotation patterns | Vendor clusters sharing wins across same dept+category |
-| Multi-bid consistency | Vendors winning repeatedly despite declared competition |
+| Rotation patterns | Vendor clusters sharing wins in same category |
+| Multi-bid consistency | Winning repeatedly despite declared competition |
 
-**Run:**
 ```bash
-pip install requests pandas
 python3 procurement_screen.py                                # 5,000 records, 2022+
 python3 procurement_screen.py --limit 32000 --year-from 2019 --output report.txt
-python3 procurement_screen.py --dept dnd-mdn                 # Filter by department
-python3 procurement_screen.py --sector IT --output it.txt    # Filter by sector
+python3 procurement_screen.py --sector IT                    # IT services focus
 ```
-
-**First run findings (Sep 4, 2026, 695 contracts):**
-- Microsoft Canada: contract inflated 348% ($270K → $1.2M)
-- CGI Information Systems: appears 4× in amendment inflation, 187–330% growth
-- Thomson Reuters + LexisNexis rotating in legal research at Administrative Tribunals (HHI 3,554)
-- Engineers in Motion: 5 wins, avg 4.4 competing bids per tender
 
 ---
 
 ### `regulatory_triage.py` — Federal Regulatory Corpus Triage
 
-Downloads and analyzes the full federal laws XML corpus (971 acts, 1,000+ regulations) from `justicecanada/laws-lois-xml` and flags instruments for reform.
+Analyzes all 971 federal acts + 1,000+ regulations from the Justice Laws XML corpus.
 
 | Signal | What it detects |
 |--------|-----------------|
 | Staleness | Acts not amended in 15+ years |
-| Tech-specificity | Provisions requiring physical presence, paper, fax, legacy media |
-| Anti-competitive structure | Price floors/ceilings, membership barriers, exclusivity, geographic restrictions |
+| Tech-specificity | Physical presence, paper, fax, legacy media requirements |
+| Anti-competitive structure | Price floors/ceilings, membership barriers, exclusivity |
 
-**Run:**
+**First full-corpus run (Sep 2026):** 645 of 971 acts flagged. Excise Tax Act + Income Tax Act scored highest (147). 322 acts not amended in 15+ years. Criminal Code still has 9 telegraph references.
+
 ```bash
-python3 regulatory_triage.py --sample 100         # Quick sample (2-3 min)
-python3 regulatory_triage.py                      # Full corpus (971 acts, ~15 min)
-python3 regulatory_triage.py --type regulations   # Analyze regulations
-python3 regulatory_triage.py --sector financial health --output financial.txt
+python3 regulatory_triage.py --sample 100      # Quick run
+python3 regulatory_triage.py                   # Full corpus (~15 min)
+python3 regulatory_triage.py --sector financial health
 ```
 
-**First run findings (100 acts):**
-- 63/100 acts flagged (score ≥ 15)
-- Bank Act: score 138 — 48 in-person requirements, 492 branch references, facsimile still in text
-- Agricultural Marketing Programs Act: price floors AND price ceilings in same act
-- 34 acts not amended in 15+ years; 7 bilateral tax treaties from 2002–2006 still live
-- Bills of Exchange Act: corporate seal and wet signature requirements still in force
+---
+
+### `buyandsell_monitor.py` — Early Warning Monitor
+
+Scores new federal contracts against the **ArriveCan/Dalian pattern signature** — 7 elements that collectively identify high-risk procurement before amendment inflation compounds.
+
+| Pattern Element | Signal |
+|----------------|--------|
+| PSIB set-aside | Indigenous procurement bypasses competitive tendering |
+| IT commodity | High-risk services category (codes 473, 369-374, 491, 499) |
+| High-risk dept | CBSA, DND, IRCC, SSC, TBS |
+| Below-threshold original | Award below $250K competitive tender threshold |
+| Amendment inflation | Contract value >2x original |
+| Crisis period | Signed 2020-2022 (emergency procurement era) |
+| Known risk vendor | Matches investigation watchlist |
+
+**Score 3+ = flag for review. Score 5+ = immediate attention.**
+
+```bash
+python3 buyandsell_monitor.py                  # Last 7 days
+python3 buyandsell_monitor.py --days 30 --output alerts.txt
+python3 buyandsell_monitor.py --watchlist my_vendors.txt
+```
+
+---
+
+## Automated Weekly Scanning — GitHub Actions
+
+The repo includes a GitHub Actions workflow (`.github/workflows/monitor.yml`) that runs every Monday at 8am UTC:
+
+- Runs all three tools
+- Commits results to `results/` folder
+- Uploads as downloadable artifact
+- Zero cost, zero infrastructure
+
+To enable: just push to main. Actions runs automatically. Results appear in `results/` within ~5 minutes.
+
+To run manually: GitHub → Actions tab → "Weekly Procurement Monitor" → Run workflow.
+
+---
+
+## For the Competition Bureau's Digital Enforcement & Intelligence Branch
+
+No hosting needed. Runs on your sovereign servers:
+
+```bash
+git clone https://github.com/ai-for-canadians/proactive-competition-ai
+pip install requests pandas
+python3 buyandsell_monitor.py --days 7 --output alert.txt
+python3 procurement_screen.py --limit 32000 --output results.txt
+```
+
+- No external API calls for sensitive data
+- No data leaves the machine
+- Swap `RESOURCE_ID` in config to point at internal PSPC data
+- MIT licensed — your team owns whatever you build on top
 
 ---
 
@@ -82,8 +119,7 @@ python3 regulatory_triage.py --sector financial health --output financial.txt
 |------|---------|--------|
 | Procurement | Proactive Publication — Contracts over $10,000 | [open.canada.ca](https://open.canada.ca/data/en/dataset/d8f85d91-7dec-4fd1-8055-483b77225d8b) |
 | Regulatory | Federal laws XML corpus | [justicecanada/laws-lois-xml](https://github.com/justicecanada/laws-lois-xml) |
-
-Both datasets are fully public. No authentication required.
+| BuyAndSell monitor | Same procurement API, pattern screening | open.canada.ca |
 
 ---
 
@@ -91,47 +127,27 @@ Both datasets are fully public. No authentication required.
 
 ```bash
 pip install requests pandas
-# Python 3.8+ required
+# Python 3.8+ required. All other imports are standard library.
 ```
 
-No other dependencies. All other imports are Python standard library.
+---
+
+## What's Next
+
+- [ ] Provincial procurement portals (Ontario/BC/Quebec)
+- [ ] Corporate registry cross-reference (ISED API)
+- [ ] Property covenant mapping (municipal land registries)
+- [ ] AI-washing audit (C-59 deceptive marketing screen)
+- [ ] Private litigant version (legal evidentiary output format)
+- [ ] Next.js dashboard on Vercel reading GitHub Actions results
 
 ---
 
-## Limitations
+## Built by
 
-**Procurement tool:**
-- API limit: 32,000 records per call out of 1.3M total
-- No individual bid prices — only winning contract value and declared bid count
-- Amendment inflation can be legitimate (genuine scope changes) — not evidence of wrongdoing
-- Rotation flags require cross-checking corporate registries for related parties
+[Patrick Farrar](https://linkedin.com/in/matthew-chiasson) / [AI for Canadians](https://aiforcanadians.org)  
+Contact: patrick@aiforcanadians.org  
 
-**Regulatory tool:**
-- NLP pattern matching produces false positives — "physical location" catches real offices, not just anti-digital provisions
-- Anti-competitive flags require legal review — some provisions reflect intentional policy
-- Text extraction from XML may miss context; provision-level reading required for any action
-
-**Both tools produce intelligence leads, not evidence.** Every flag requires qualified human review before any action.
-
----
-
-## What's next
-
-- [ ] Scale procurement to full 1.3M population with pagination
-- [ ] Corporate registry cross-reference for rotation patterns (ISED company database)
-- [ ] Provincial procurement portals (Ontario, BC, Quebec)
-- [ ] Full regulatory corpus run: 971 acts + 1,000 regulations
-- [ ] Provincial regulatory corpus (starting with ON and NS)
-- [ ] Gazette scraper: monitor live consultations for competition concerns
-- [ ] Judge analytics dashboard (separate track — legal aid / Judicial Council audience)
-
----
-
-## Contribute
-
-Built by [Patrick Farrar](https://linkedin.com/in/matthew-chiasson) / [AI for Canadians](https://aiforcanadians.org).  
-Contact: patrick@aiforcanadians.org
-
-Interested in building on this? [Build Canada](https://buildcanada.com) is actively looking for engineers to build open-source AI tools for government. This repo is a natural home for that collaboration.
+Collaborating with the Competition Bureau of Canada, Build Canada, and the Canadian Shield Institute.
 
 Pull requests welcome. Issues welcome. Fork freely — this is public interest infrastructure.

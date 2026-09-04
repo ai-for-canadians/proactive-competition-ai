@@ -1,0 +1,61 @@
+name: Weekly Procurement Monitor
+
+on:
+  schedule:
+    - cron: '0 8 * * 1'  # Every Monday 8am UTC
+  workflow_dispatch:      # Also runnable manually from GitHub Actions tab
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests pandas
+
+      - name: Create results directory
+        run: mkdir -p results
+
+      - name: Run procurement bid-rigging screen
+        run: |
+          python3 procurement_screen.py \
+            --limit 32000 \
+            --year-from 2022 \
+            --output results/procurement_latest.txt
+
+      - name: Run BuyAndSell early warning monitor
+        run: |
+          python3 buyandsell_monitor.py \
+            --days 7 \
+            --output results/solicitation_alerts.txt
+
+      - name: Run regulatory triage (100-act sample)
+        run: |
+          python3 regulatory_triage.py \
+            --sample 100 \
+            --output results/regulatory_latest.txt
+
+      - name: Upload results as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: scan-results-${{ github.run_id }}
+          path: results/
+          retention-days: 90
+
+      - name: Commit results to repo
+        run: |
+          git config user.email "patrick@aiforcanadians.org"
+          git config user.name "AIFC Monitor Bot"
+          git add results/
+          git diff --staged --quiet || git commit -m "Weekly scan: $(date +%Y-%m-%d)"
+          git push
