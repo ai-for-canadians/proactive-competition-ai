@@ -1,0 +1,207 @@
+========================================================================
+FEDERAL REGULATORY CORPUS TRIAGE — REFORM OPPORTUNITY MAP
+AI for Canadians | github.com/ai-for-canadians/proactive-competition-ai
+Run: 2026-09-07 13:45 | Analyzed: 100 | Flagged: 62
+========================================================================
+
+Stale (15+ yrs): 34  |  Tech-specific: 42  |  Anti-competitive: 30
+
+------------------------------------------------------------------------
+[ 1] Bank Act — Score: 128
+     Amended: 2026-03-26 | In force: 2018-12-13
+     Sectors: financial, professional, agriculture
+     ⚠ [TECH:physical_presence] in person, attend in person (48x)
+     △ [TECH:physical_location] office, branch (492x)
+     △ [TECH:paper_requirement] in writing, printed (161x)
+     ⚠ [TECH:legacy_telecom] facsimile (2x)
+
+[ 2] Bretton Woods and Related Agreements Act — Score: 96
+     Amended: 2024-06-20 | In force: 2017-12-14
+     Sectors: financial
+     △ [TECH:physical_location] office, branch (64x)
+     △ [TECH:paper_requirement] in writing, written notice (16x)
+     ⚠ [ANTICOMP:membership_barrier] only if the minister of finance is satisfied that (a) the foreign state has
+     △ [ANTICOMP:price_ceiling] maximum financial assistance that may be provided under this section shall 
+
+[ 3] Bankruptcy and Insolvency Act — Score: 84
+     Amended: 2026-06-20 | In force: 2009-12-15
+     Sectors: financial, energy, agriculture
+     ⚠ [TECH:physical_presence] in person (2x)
+     △ [TECH:physical_location] office (27x)
+     △ [TECH:paper_requirement] in writing, printed (31x)
+     · [TECH:legacy_payment] cheque (2x)
+
+[ 4] Buffalo and Fort Erie Public Bridge Company Act — Score: 71
+     Amended: 2002-12-31 | In force: 2002-12-31
+     Sectors: financial
+     △ [STALE] Last amended 2002 — 24 years ago
+     △ [TECH:physical_location] office (5x)
+     △ [TECH:paper_requirement] in writing (3x)
+     ⚠ [TECH:legacy_telecom] telegraph (1x)
+
+[ 5] Agricultural Marketing Programs Act — Score: 68
+     Amended: 2016-02-05 | In force: 2015-02-27
+     Sectors: agriculture, financial
+     △ [TECH:paper_requirement] in writing (5x)
+     ⚠ [ANTICOMP:membership_barrier] only in respect of an agricultural product that meets the following criteri
+     △ [ANTICOMP:price_ceiling] maximum contingent liability (5) the aggregate contingent liability of her 
+     ⚠ [ANTICOMP:price_floor] minimum average prices of products sold by marketing agencies. conditions f
+
+[ 6] Accessible Canada Act — Score: 66
+     Amended: 2023-04-27 | In force: 2019-06-21
+     Sectors: telecom, financial, transport
+     △ [TECH:physical_location] office (16x)
+     △ [TECH:paper_requirement] in writing, written notice (14x)
+     ⚠ [ANTICOMP:membership_barrier] must be treated with dignity regardless of their disabilities; (b) all pers
+     △ [ANTICOMP:price_ceiling] maximum penalty in respect of a violation that may be fixed under regulatio
+
+[ 7] Air Travellers Security Charge Act — Score: 59
+     Amended: 2026-03-26 | In force: 2015-01-01
+     Sectors: transport, financial
+     △ [TECH:physical_location] office, branch (11x)
+     △ [TECH:paper_requirement] in writing (27x)
+     · [TECH:legacy_payment] money order, cheque (2x)
+     ⚠ [ANTICOMP:membership_barrier] only emplanements that are described in paragraph (c) or (d) of the definit
+
+[ 8] Animal Pedigree Act — Score: 59
+     Amended: 2004-12-15 | In force: 2002-12-31
+     △ [STALE] Last amended 2004 — 22 years ago
+     △ [TECH:physical_location] office, branch (9x)
+     △ [TECH:paper_requirement] in writing (8x)
+     · [TECH:physical_delivery] registered mail (1x)
+
+[ 9] Bank of British Columbia Business Continuation Act — Score: 58
+     Amended: 2002-12-31 | In force: 2002-12-31
+     Sectors: financial
+     △ [STALE] Last amended 2002 — 24 years ago
+     ⚠ [TECH:physical_presence] in person (1x)
+     · [TECH:physical_delivery] registered mail (1x)
+     ⚠ [ANTICOMP:membership_barrier] only to the extent necessary to enable the directors to carry out the sale 
+
+[10] Access to Information Act — Score: 56
+     Amended: 2026-06-14 | In force: 2018-12-13
+     Sectors: health, financial
+     △ [TECH:physical_location] office, branch (86x)
+     △ [TECH:paper_requirement] in writing, written notice (20x)
+     ⚠ [ANTICOMP:membership_barrier] must be published under any of sections 74 to 78 . if directives and guidel
+     ⚠ [ANTICOMP:exclusivity] sole reason that the information contained in it has been published under p
+
+[11] Asian Infrastructure Investment Bank Agreement Act — Score: 56
+     Amended: 2017-12-14 | In force: 2017-12-14
+     Sectors: financial
+     △ [TECH:physical_location] office (20x)
+     △ [TECH:paper_requirement] in writing (2x)
+     ⚠ [ANTICOMP:membership_barrier] only by members in accordance with the provisions of article 5. 2 the origi
+     △ [ANTICOMP:price_ceiling] price. 4 no member shall be liable, by reason of its membership, for obliga
+
+[12] Canada-Argentina Income Tax Convention Act, 1994 — Score: 56
+     Amended: 2003-01-01 | In force: 2003-01-01
+     Sectors: financial
+     △ [STALE] Last amended 2003 — 23 years ago
+     △ [TECH:physical_location] office, branch (2x)
+     △ [TECH:paper_requirement] in writing (2x)
+     ⚠ [ANTICOMP:membership_barrier] must be submitted within two years from the first notification of the actio
+
+[13] Canada–Armenia Tax Convention Act, 2004 — Score: 56
+     Amended: 2005-03-23 | In force: 2005-03-23
+     Sectors: financial
+     △ [STALE] Last amended 2005 — 21 years ago
+     △ [TECH:physical_location] office, branch (5x)
+     △ [TECH:paper_requirement] in writing (2x)
+     ⚠ [ANTICOMP:membership_barrier] must be submitted within two years from the first notification of the actio
+
+[14] Canada–Azerbaijan Tax Convention Act, 2004 — Score: 56
+     Amended: 2006-02-15 | In force: 2005-03-23
+     Sectors: financial
+     △ [STALE] Last amended 2006 — 20 years ago
+     △ [TECH:physical_location] office, branch (2x)
+     △ [TECH:paper_requirement] in writing (2x)
+     ⚠ [ANTICOMP:membership_barrier] must be submitted within two years from the first notification of the actio
+
+[15] Canada-Brazil Income Tax Convention Act, 1984 — Score: 56
+     Amended: 2003-01-01 | In force: 2003-01-01
+     Sectors: financial
+     △ [STALE] Last amended 2003 — 23 years ago
+     △ [TECH:physical_location] office, branch (2x)
+     △ [TECH:paper_requirement] written notice (1x)
+     ⚠ [ANTICOMP:membership_barrier] only in that state unless the enterprise carries on business in the other c
+
+[16] Bills of Exchange Act — Score: 55
+     Amended: 2021-08-03 | In force: 2007-04-20
+     Sectors: financial
+     △ [TECH:physical_location] office, branch (25x)
+     △ [TECH:paper_requirement] in writing, printed (12x)
+     △ [TECH:signature_requirement] under seal (1x)
+     △ [TECH:corporate_seal] corporate seal (1x)
+
+[17] Broadcasting Act — Score: 49
+     Amended: 2026-03-26 | In force: 2014-12-16
+     Sectors: telecom, financial
+     △ [TECH:physical_location] office (30x)
+     △ [TECH:paper_requirement] in writing (2x)
+     · [TECH:physical_delivery] registered mail (2x)
+     ⚠ [ANTICOMP:membership_barrier] must be carried on under a licence; (b) is carried on by a person who is ex
+
+[18] Bell Canada Act — Score: 48
+     Amended: 2002-12-31 | In force: 2002-12-31
+     Sectors: telecom
+     △ [STALE] Last amended 2002 — 24 years ago
+     △ [TECH:physical_location] office, branch (3x)
+     ⚠ [ANTICOMP:exclusivity] one or more persons. ( contrôle ) inconsistencies 3 in the event of any inc
+
+[19] Aeronautics Act — Score: 46
+     Amended: 2026-03-26 | In force: 2018-10-31
+     Sectors: transport, financial, health
+     △ [TECH:physical_location] office, branch (6x)
+     △ [TECH:paper_requirement] in writing, written notice (26x)
+     ⚠ [ANTICOMP:membership_barrier] only at specified times, places and occasions, and may do so either absolut
+     △ [ANTICOMP:geographic_barrier] area of land, water (including the frozen surface thereof) or other support
+
+[20] Boards of Trade Act — Score: 44
+     Amended: 2015-02-26 | In force: 2002-12-31
+     Sectors: financial, agriculture
+     △ [TECH:physical_location] office (9x)
+     △ [TECH:paper_requirement] in writing (3x)
+     △ [TECH:corporate_seal] corporate seal (2x)
+     ⚠ [ANTICOMP:membership_barrier] only with the sanction and authority of the governor in council. applicatio
+
+[21] Antarctic Environmental Protection Act — Score: 41
+     Amended: 2026-03-26 | In force: 2010-12-10
+     △ [TECH:paper_requirement] in writing, written notice (9x)
+     · [TECH:physical_delivery] registered mail (1x)
+     ⚠ [ANTICOMP:membership_barrier] must be in the form and contain the information prescribed by the regulatio
+     △ [ANTICOMP:geographic_barrier] areas of the continental shelf that are adjacent to that continent or to th
+
+[22] Assisted Human Reproduction Act — Score: 36
+     Amended: 2020-06-09 | In force: 2012-09-30
+     △ [TECH:physical_location] office (4x)
+     △ [TECH:paper_requirement] in writing (3x)
+     ⚠ [ANTICOMP:membership_barrier] must be given priority in all decisions respecting their use; (b) the benef
+
+[23] Agriculture and Agri-Food Administrative Monetary Penalties Act — Score: 36
+     Amended: 2026-06-18 | In force: 2002-12-31
+     Sectors: financial
+     △ [TECH:physical_location] office (10x)
+     △ [TECH:paper_requirement] in writing (1x)
+     ⚠ [ANTICOMP:membership_barrier] must be judicially noticed. examination of witnesses, etc. (2) in addition 
+
+[24] Bridges Act — Score: 36
+     Amended: 2002-12-31 | In force: 2002-12-31
+     Sectors: professional
+     △ [STALE] Last amended 2002 — 24 years ago
+     △ [TECH:physical_location] office (1x)
+     △ [TECH:paper_requirement] in writing (5x)
+
+[25] Budget Implementation Act, 1997 — Score: 36
+     Amended: 2017-12-31 | In force: 2002-12-31
+     Sectors: financial
+     △ [TECH:physical_location] office (33x)
+     △ [TECH:corporate_seal] corporate seal (1x)
+     ⚠ [ANTICOMP:membership_barrier] only. 1997, c. 26, s. 8; 2001, c. 14, s. 235; 2009, c. 23, ss. 307, 342 dir
+
+========================================================================
+TECH flags → technology-neutral redraft candidates
+ANTICOMP flags → Bureau advocacy candidates
+STALE flags → sunset review candidates
+All flags require legal review before any action.
+========================================================================
