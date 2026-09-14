@@ -1,0 +1,86 @@
+========================================================================
+BUYANDSELL EARLY WARNING MONITOR
+AI for Canadians | Competition Bureau Proactive Enforcement
+Run: 2026-09-14 14:30 | Records: 5,000 | Flags: 447
+All flags are intelligence leads requiring human review.
+========================================================================
+
+HIGH PRIORITY (score 5-7): 6
+
+  [1] Score 5/7 | CGI INFORMATION SYSTEMS AND MANAGEMENT CONSULTANTS
+      Dept: Administrative Tribunals Support Service of Canada | $457,650 | 2022-11-16
+      Signals: IT commodity: 473 | Below threshold: $226,000 | Amendment inflation: +102% | Crisis-period: 2022
+      Ref: C-2022-2023-Q4-00007
+
+  [2] Score 5/7 | CGI INFORMATION SYSTEMS AND MANAGEMENT CONSULTANTS
+      Dept: Administrative Tribunals Support Service of Canada | $649,750 | 2022-11-16
+      Signals: IT commodity: 473 | Below threshold: $226,000 | Amendment inflation: +187% | Crisis-period: 2022
+      Ref: C-2023-2024-Q2-00001
+
+  [3] Score 5/7 | CGI INFORMATION SYSTEMS AND MANAGEMENT CONSULTANTS
+      Dept: Administrative Tribunals Support Service of Canada | $649,750 | 2022-11-16
+      Signals: IT commodity: 473 | Below threshold: $226,000 | Amendment inflation: +187% | Crisis-period: 2022
+      Ref: C-2023-2024-Q2-00002
+
+  [4] Score 5/7 | CGI Information Systems and Management Consultants
+      Dept: Administrative Tribunals Support Service of Canada | $860,000 | 2022-11-16
+      Signals: IT commodity: 473 | Below threshold: $200,000 | Amendment inflation: +330% | Crisis-period: 2022
+      Ref: C-2024-2025-Q4-00002
+
+  [5] Score 5/7 | GC STRATEGIES INC
+      Dept: Agriculture and Agri-Food Canada | $452,000 | 2018-06-07
+      Signals: IT commodity: 473 | Below threshold: $169,500 | Amendment inflation: +166% | Known risk vendor: gc strategies inc
+      Ref: C-2018-2019-Q4-00079
+
+  [6] Score 5/7 | DALIAN ENTERPRISES AND CORADIX TECHNOLOGIES CONSUL
+      Dept: Agriculture and Agri-Food Canada | $119,723 | 2014-04-03
+      Signals: IT commodity: 473 | Below threshold: $41,019 | Amendment inflation: +191% | Known risk vendor: dalian enterprises and coradix technolog
+      Ref: C-2017-2018-Q4-00669
+
+MEDIUM PRIORITY (score 3-4): 441
+
+  [1] Score 4/7 | A.C. Consulting Solutions Inc.
+      Accessibility Standards Canada | $100,028 | IT commodity: 499 | Below threshold: $47,140 | Amendment inflation: +112%
+      Ref: C-2022-2023-Q4-00002
+
+  [2] Score 4/7 | ADIRONDACK INFORMATION MANAGEMENT INC., AMITA CORP
+      Administrative Tribunals Support Service of Canada | $208,005 | IT commodity: 473 | Below threshold: $94,072 | Amendment inflation: +121%
+      Ref: C-2020-2021-Q2-00021
+
+  [3] Score 4/7 | ADIRONDACK INFORMATION MANAGEMENT INC., AMITA CORP
+      Administrative Tribunals Support Service of Canada | $113,113 | IT commodity: 473 | Below threshold: $55,822 | Amendment inflation: +102%
+      Ref: C-2020-2021-Q2-00023
+
+  [4] Score 4/7 | ADIRONDACK INFORMATION MANGEMENT INV., AMITA CORPO
+      Administrative Tribunals Support Service of Canada | $135,148 | IT commodity: 473 | Below threshold: $55,822 | Amendment inflation: +142%
+      Ref: C-2020-2021-Q3-00020
+
+  [5] Score 4/7 | ADIRONDACK INFORMATION MANGEMENT INV., AMITA CORPO
+      Administrative Tribunals Support Service of Canada | $135,148 | IT commodity: 473 | Below threshold: $55,822 | Amendment inflation: +142%
+      Ref: C-2020-2021-Q3-00021
+
+  [6] Score 4/7 | CISTEL TECHNOLOGY INC
+      Administrative Tribunals Support Service of Canada | $167,341 | IT commodity: 473 | Below threshold: $73,224 | Amendment inflation: +128%
+      Ref: C-2020-2021-Q3-00023
+
+  [7] Score 4/7 | ADIRONDACK INFORMATION MANGEMENT INV., AMITA CORPO
+      Administrative Tribunals Support Service of Canada | $246,114 | IT commodity: 473 | Below threshold: $116,220 | Amendment inflation: +111%
+      Ref: C-2020-2021-Q3-00025
+
+  [8] Score 4/7 | ADIRONDACK INFORMATION MANGEMENT INV., AMITA CORPO
+      Administrative Tribunals Support Service of Canada | $296,738 | IT commodity: 473 | Below threshold: $117,520 | Amendment inflation: +152%
+      Ref: C-2020-2021-Q3-00026
+
+  [9] Score 4/7 | ADIRONDACK INFORMATION MANGEMENT INV., AMITA CORPO
+      Administrative Tribunals Support Service of Canada | $296,738 | IT commodity: 473 | Below threshold: $117,520 | Amendment inflation: +152%
+      Ref: C-2020-2021-Q3-00027
+
+  [10] Score 4/7 | ADIRONDACK INFORMATION MANGEMENT INV., AMITA CORPO
+      Administrative Tribunals Support Service of Canada | $296,738 | IT commodity: 473 | Below threshold: $117,520 | Amendment inflation: +152%
+      Ref: C-2020-2021-Q3-00028
+
+PSIB IT CONCENTRATION: 0
+
+========================================================================
+github.com/ai-for-canadians/proactive-competition-ai
+========================================================================
