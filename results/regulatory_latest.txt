@@ -1,7 +1,7 @@
 ========================================================================
 FEDERAL REGULATORY CORPUS TRIAGE — REFORM OPPORTUNITY MAP
 AI for Canadians | github.com/ai-for-canadians/proactive-competition-ai
-Run: 2026-09-14 14:31 | Analyzed: 100 | Flagged: 62
+Run: 2026-09-21 14:38 | Analyzed: 100 | Flagged: 62
 ========================================================================
 
 Stale (15+ yrs): 34  |  Tech-specific: 42  |  Anti-competitive: 30
@@ -12,14 +12,14 @@ Stale (15+ yrs): 34  |  Tech-specific: 42  |  Anti-competitive: 30
      Sectors: financial, professional, agriculture
      ⚠ [TECH:physical_presence] in person, attend in person (48x)
      △ [TECH:physical_location] branches, branch (492x)
-     △ [TECH:paper_requirement] written notice, in writing (161x)
+     △ [TECH:paper_requirement] in writing, written notice (161x)
      ⚠ [TECH:legacy_telecom] facsimile (2x)
 
 [ 2] Bretton Woods and Related Agreements Act — Score: 96
      Amended: 2024-06-20 | In force: 2017-12-14
      Sectors: financial
      △ [TECH:physical_location] branch, office (64x)
-     △ [TECH:paper_requirement] written notice, in writing (16x)
+     △ [TECH:paper_requirement] in writing, written notice (16x)
      ⚠ [ANTICOMP:membership_barrier] only if the minister of finance is satisfied that (a) the foreign state has
      △ [ANTICOMP:price_ceiling] maximum financial assistance that may be provided under this section shall 
 
@@ -28,7 +28,7 @@ Stale (15+ yrs): 34  |  Tech-specific: 42  |  Anti-competitive: 30
      Sectors: financial, energy, agriculture
      ⚠ [TECH:physical_presence] in person (2x)
      △ [TECH:physical_location] office (27x)
-     △ [TECH:paper_requirement] written notice, in writing (31x)
+     △ [TECH:paper_requirement] in writing, written notice (31x)
      · [TECH:legacy_payment] cheque (2x)
 
 [ 4] Buffalo and Fort Erie Public Bridge Company Act — Score: 71
@@ -51,7 +51,7 @@ Stale (15+ yrs): 34  |  Tech-specific: 42  |  Anti-competitive: 30
      Amended: 2023-04-27 | In force: 2019-06-21
      Sectors: telecom, financial, transport
      △ [TECH:physical_location] office (16x)
-     △ [TECH:paper_requirement] written notice, in writing (14x)
+     △ [TECH:paper_requirement] in writing, written notice (14x)
      ⚠ [ANTICOMP:membership_barrier] must be treated with dignity regardless of their disabilities; (b) all pers
      △ [ANTICOMP:price_ceiling] maximum penalty in respect of a violation that may be fixed under regulatio
 
@@ -82,7 +82,7 @@ Stale (15+ yrs): 34  |  Tech-specific: 42  |  Anti-competitive: 30
      Amended: 2026-06-14 | In force: 2018-12-13
      Sectors: health, financial
      △ [TECH:physical_location] branch, office (86x)
-     △ [TECH:paper_requirement] written notice, in writing (20x)
+     △ [TECH:paper_requirement] in writing, written notice (20x)
      ⚠ [ANTICOMP:membership_barrier] must be published under any of sections 74 to 78 . if directives and guidel
      ⚠ [ANTICOMP:exclusivity] sole reason that the information contained in it has been published under p
 
@@ -130,7 +130,7 @@ Stale (15+ yrs): 34  |  Tech-specific: 42  |  Anti-competitive: 30
      Amended: 2021-08-03 | In force: 2007-04-20
      Sectors: financial
      △ [TECH:physical_location] branches, branch (25x)
-     △ [TECH:paper_requirement] written notice, in writing (12x)
+     △ [TECH:paper_requirement] in writing, written notice (12x)
      △ [TECH:signature_requirement] under seal (1x)
      △ [TECH:corporate_seal] corporate seal (1x)
 
@@ -153,7 +153,7 @@ Stale (15+ yrs): 34  |  Tech-specific: 42  |  Anti-competitive: 30
      Amended: 2026-03-26 | In force: 2018-10-31
      Sectors: transport, financial, health
      △ [TECH:physical_location] branch, office (6x)
-     △ [TECH:paper_requirement] written notice, in writing (26x)
+     △ [TECH:paper_requirement] in writing, written notice (26x)
      ⚠ [ANTICOMP:membership_barrier] only at specified times, places and occasions, and may do so either absolut
      △ [ANTICOMP:geographic_barrier] area of land, water (including the frozen surface thereof) or other support
 
@@ -167,7 +167,7 @@ Stale (15+ yrs): 34  |  Tech-specific: 42  |  Anti-competitive: 30
 
 [21] Antarctic Environmental Protection Act — Score: 41
      Amended: 2026-03-26 | In force: 2010-12-10
-     △ [TECH:paper_requirement] written notice, in writing (9x)
+     △ [TECH:paper_requirement] in writing, written notice (9x)
      · [TECH:physical_delivery] registered mail (1x)
      ⚠ [ANTICOMP:membership_barrier] must be in the form and contain the information prescribed by the regulatio
      △ [ANTICOMP:geographic_barrier] areas of the continental shelf that are adjacent to that continent or to th
