@@ -1,18 +1,18 @@
 ========================================================================
 FEDERAL REGULATORY CORPUS TRIAGE — REFORM OPPORTUNITY MAP
 AI for Canadians | github.com/ai-for-canadians/proactive-competition-ai
-Run: 2026-09-21 14:38 | Analyzed: 100 | Flagged: 62
+Run: 2026-09-28 16:09 | Analyzed: 100 | Flagged: 62
 ========================================================================
 
-Stale (15+ yrs): 34  |  Tech-specific: 42  |  Anti-competitive: 30
+Stale (15+ yrs): 34  |  Tech-specific: 42  |  Anti-competitive: 31
 
 ------------------------------------------------------------------------
 [ 1] Bank Act — Score: 128
-     Amended: 2026-03-26 | In force: 2018-12-13
+     Amended: 2026-09-01 | In force: 2018-12-13
      Sectors: financial, professional, agriculture
      ⚠ [TECH:physical_presence] in person, attend in person (48x)
      △ [TECH:physical_location] branches, branch (492x)
-     △ [TECH:paper_requirement] in writing, written notice (161x)
+     △ [TECH:paper_requirement] printed, in writing (161x)
      ⚠ [TECH:legacy_telecom] facsimile (2x)
 
 [ 2] Bretton Woods and Related Agreements Act — Score: 96
@@ -28,7 +28,7 @@ Stale (15+ yrs): 34  |  Tech-specific: 42  |  Anti-competitive: 30
      Sectors: financial, energy, agriculture
      ⚠ [TECH:physical_presence] in person (2x)
      △ [TECH:physical_location] office (27x)
-     △ [TECH:paper_requirement] in writing, written notice (31x)
+     △ [TECH:paper_requirement] printed, in writing (31x)
      · [TECH:legacy_payment] cheque (2x)
 
 [ 4] Buffalo and Fort Erie Public Bridge Company Act — Score: 71
@@ -130,7 +130,7 @@ Stale (15+ yrs): 34  |  Tech-specific: 42  |  Anti-competitive: 30
      Amended: 2021-08-03 | In force: 2007-04-20
      Sectors: financial
      △ [TECH:physical_location] branches, branch (25x)
-     △ [TECH:paper_requirement] in writing, written notice (12x)
+     △ [TECH:paper_requirement] printed, in writing (12x)
      △ [TECH:signature_requirement] under seal (1x)
      △ [TECH:corporate_seal] corporate seal (1x)
 
@@ -140,7 +140,7 @@ Stale (15+ yrs): 34  |  Tech-specific: 42  |  Anti-competitive: 30
      △ [TECH:physical_location] office (30x)
      △ [TECH:paper_requirement] in writing (2x)
      · [TECH:physical_delivery] registered mail (2x)
-     ⚠ [ANTICOMP:membership_barrier] only of programs in respect of which this act does not apply under this sec
+     ⚠ [ANTICOMP:membership_barrier] must be carried on under a licence; (b) is carried on by a person who is ex
 
 [18] Bell Canada Act — Score: 48
      Amended: 2002-12-31 | In force: 2002-12-31
@@ -154,7 +154,7 @@ Stale (15+ yrs): 34  |  Tech-specific: 42  |  Anti-competitive: 30
      Sectors: transport, financial, health
      △ [TECH:physical_location] branch, office (6x)
      △ [TECH:paper_requirement] in writing, written notice (26x)
-     ⚠ [ANTICOMP:membership_barrier] only at specified times, places and occasions, and may do so either absolut
+     ⚠ [ANTICOMP:membership_barrier] only make a security measure in relation to a particular matter if (a) an a
      △ [ANTICOMP:geographic_barrier] area of land, water (including the frozen surface thereof) or other support
 
 [20] Boards of Trade Act — Score: 44
@@ -172,32 +172,33 @@ Stale (15+ yrs): 34  |  Tech-specific: 42  |  Anti-competitive: 30
      ⚠ [ANTICOMP:membership_barrier] must be in the form and contain the information prescribed by the regulatio
      △ [ANTICOMP:geographic_barrier] areas of the continental shelf that are adjacent to that continent or to th
 
-[22] Assisted Human Reproduction Act — Score: 36
+[22] Bank of Canada Act — Score: 39
+     Amended: 2024-06-20 | In force: 2018-06-21
+     Sectors: financial, professional
+     △ [TECH:physical_location] branches, office (29x)
+     △ [TECH:paper_requirement] printed, in writing (6x)
+     · [TECH:legacy_payment] cheque (2x)
+     ⚠ [ANTICOMP:membership_barrier] must be signed by the governor or the deputy governor and the chief account
+
+[23] Assisted Human Reproduction Act — Score: 36
      Amended: 2020-06-09 | In force: 2012-09-30
      △ [TECH:physical_location] office (4x)
      △ [TECH:paper_requirement] in writing (3x)
      ⚠ [ANTICOMP:membership_barrier] must be given priority in all decisions respecting their use; (b) the benef
 
-[23] Agriculture and Agri-Food Administrative Monetary Penalties Act — Score: 36
+[24] Agriculture and Agri-Food Administrative Monetary Penalties Act — Score: 36
      Amended: 2026-06-18 | In force: 2002-12-31
      Sectors: financial
      △ [TECH:physical_location] office (10x)
      △ [TECH:paper_requirement] in writing (1x)
      ⚠ [ANTICOMP:membership_barrier] must be judicially noticed. examination of witnesses, etc. (2) in addition 
 
-[24] Bridges Act — Score: 36
+[25] Bridges Act — Score: 36
      Amended: 2002-12-31 | In force: 2002-12-31
      Sectors: professional
      △ [STALE] Last amended 2002 — 24 years ago
      △ [TECH:physical_location] office (1x)
      △ [TECH:paper_requirement] in writing (5x)
-
-[25] Budget Implementation Act, 1997 — Score: 36
-     Amended: 2017-12-31 | In force: 2002-12-31
-     Sectors: financial
-     △ [TECH:physical_location] office (33x)
-     △ [TECH:corporate_seal] corporate seal (1x)
-     ⚠ [ANTICOMP:membership_barrier] only. 1997, c. 26, s. 8; 2001, c. 14, s. 235; 2009, c. 23, ss. 307, 342 dir
 
 ========================================================================
 TECH flags → technology-neutral redraft candidates
