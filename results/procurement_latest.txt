@@ -1,7 +1,7 @@
 ========================================================================
 FEDERAL PROCUREMENT BID-RIGGING SCREEN
 AI for Canadians — Competition Bureau PoC
-Run: 2026-10-05 16:30 | Records: 9,492 | All data: public
+Run: 2026-10-12 17:04 | Records: 9,492 | All data: public
 ========================================================================
 
 NOTE: Intelligence leads only. All flags require human review.
