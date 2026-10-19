@@ -1,7 +1,7 @@
 ========================================================================
 BUYANDSELL EARLY WARNING MONITOR
 AI for Canadians | Competition Bureau Proactive Enforcement
-Run: 2026-10-12 17:04 | Records: 5,000 | Flags: 447
+Run: 2026-10-19 15:04 | Records: 5,000 | Flags: 447
 All flags are intelligence leads requiring human review.
 ========================================================================
 
